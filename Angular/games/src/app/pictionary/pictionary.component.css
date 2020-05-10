@@ -1,0 +1,50 @@
+canvas {
+  border: 1px solid #888888;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+canvas:hover {
+  cursor: crosshair;
+}
+
+.canvas-toolbar-text-div {
+  line-height: 30px;
+}
+
+.clear-button {
+  vertical-align: top;
+  margin-left: 5px;
+  height: 30px;
+}
+
+.clear-button span {
+  text-align: center;
+  vertical-align: middle;
+}
+
+:host ::ng-deep .clear-button button {
+  width: 30px !important;
+  height: 30px !important;
+  line-height: unset !important;
+  font-size: 20px !important;
+  background-color: #ffffff;
+  border: 1px solid #f44336;
+  color: #f44336;
+  padding: inherit !important;
+  box-shadow: 2px 2px #888888;
+}
+
+.messages-div {
+  float: right;
+  width: 400px;
+}
+
+.canvas-div {
+  display: inline-block;
+}
+
+.canvas-toolbar-span {
+  font-family: 'Playfair Display',
+    serif;
+  font-size: 16px;
+}

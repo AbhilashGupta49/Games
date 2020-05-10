@@ -1,0 +1,10 @@
+.timer-span {
+  font-size: 22px;
+  font-family: 'Teko', sans-serif;
+}
+
+.timer-div {
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+}

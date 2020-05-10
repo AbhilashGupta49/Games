@@ -1,0 +1,5 @@
+<div class="score-card-div">
+  <div class="card-div" *ngFor="let scorePair of scoreCard | keyvalue : valueDescOrder">
+    <p-card title="{{scorePair.key}}">{{scorePair.value}}</p-card>
+  </div>
+</div>

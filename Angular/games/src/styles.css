@@ -1,0 +1,26 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&family=Teko:wght@600&display=swap');
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  font-family: 'Teko',
+    sans-serif;
+  box-sizing: border-box;
+}
+
+
+app-root {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.component-container-div {
+  width: 100%;
+}

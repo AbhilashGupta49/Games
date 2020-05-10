@@ -1,0 +1,41 @@
+.message-list {
+  padding: 5px;
+  margin-top: 0px;
+}
+
+.message-element {
+  font-family: 'Playfair Display',
+    serif;
+  font-size: 15px;
+  list-style-type: none;
+}
+
+.scroll-panel-div {
+  box-sizing: border-box;
+  overflow-y: scroll;
+  height: 435px;
+  width: 100%;
+  border: 1px solid #888888;
+  box-shadow: 2px 2px 2px #888888;
+}
+
+.user-name-span {
+  color: #f44336;
+}
+
+.user-text-span {
+  font-family: initial;
+}
+
+:host ::ng-deep .message-input input {
+  line-height: 40px;
+  height: 40px;
+  width: 90%;
+}
+
+:host ::ng-deep .message-input button {
+  width: 10%;
+  min-width: 50px;
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}

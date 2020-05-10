@@ -1,0 +1,18 @@
+:host ::ng-deep .card-div p-card .ui-card {
+  width: 150px;
+  font-size: 16px;
+  height: 100px;
+  font-family: 'Teko', sans-serif;
+  text-align: center;
+}
+
+.card-div {
+  display: inline-flex;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.score-card-div {
+  display: flexbox;
+  margin-top: 25px;
+}

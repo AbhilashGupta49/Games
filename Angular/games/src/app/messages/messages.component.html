@@ -1,0 +1,12 @@
+<div class="ui-inputgroup message-input">
+  <input [(ngModel)]="myText" type="text" pInputText placeholder="Type your message here">
+  <button pButton type="button" icon="fa fa-superpowers" class="ui-button-warn" (click)="addToMyMessages()"></button>
+</div>
+<div class="scroll-panel-div">
+  <ul class="message-list">
+    <li class="message-element" *ngFor="let message of allMessages.reverse()">
+      <span class="user-name-span">{{message.substring(0,message.indexOf(":")+1)}}</span>
+      <span class="user-text-span">{{message.substring(message.indexOf(":")+1)}}</span>
+    </li>
+  </ul>
+</div>

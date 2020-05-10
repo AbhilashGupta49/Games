@@ -1,0 +1,9 @@
+.navbar {
+  width: 100%;
+  box-shadow: 1px 1px 1px #888888;
+}
+
+.router-outlet {
+  padding: 15px;
+  box-sizing: border-box;
+}

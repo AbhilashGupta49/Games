@@ -1,0 +1,33 @@
+.form-div {
+  margin: 200px auto 0 auto;
+  width: 420px;
+  font-size: 20px;
+  font-family: 'Playfair Display',
+    serif;
+}
+
+.ui-float-label {
+  display: inline-block;
+}
+
+.submit-username-button {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+::ng-deep .form-div .submit-username-button button {
+  width: 35px;
+  height: 36px;
+  font-size: 20px !important;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: -3px !important;
+  background-color: #f44336;
+  border: 1px solid #f44336;
+}
+
+.icon-class {
+  line-height: 33px;
+  vertical-align: middle;
+  width: 35px;
+}

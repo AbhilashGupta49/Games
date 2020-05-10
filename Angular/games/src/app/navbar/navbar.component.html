@@ -1,0 +1,8 @@
+<ul class="navbar-list">
+  <li *ngFor="let game of gameList">
+
+    <a routerLinkActive="link-active" routerLink="{{game.routerLink}}">
+      <span class="{{game.icon}}"></span>
+      <span class="link-name">{{game.name}}</span></a>
+  </li>
+</ul>

@@ -1,0 +1,335 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Games",
+		"_postman_id": "dddcf819-ebee-e225-5c50-74b491d3a971",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Setup new round",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/pictionary/setup-new-round?names=abhilash&word=cat&time=90",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pictionary",
+						"setup-new-round"
+					],
+					"query": [
+						{
+							"key": "names",
+							"value": "abhilash",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "word",
+							"value": "cat",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "time",
+							"value": "90",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Timer",
+			"request": {
+				"url": "localhost:8080/timer/reset-timer",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Give Players Points",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/player/give-points-players?names=abhilash&points=10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"player",
+						"give-points-players"
+					],
+					"query": [
+						{
+							"key": "names",
+							"value": "abhilash",
+							"equals": true,
+							"description": ""
+						},
+						{
+							"key": "points",
+							"value": "10",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Reset Points",
+			"request": {
+				"url": "localhost:8080/player/reset-player-points",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Word",
+			"request": {
+				"url": "localhost:8080/pictionary/get-word",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Player scores",
+			"request": {
+				"url": "localhost:8080/player/player-score",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"players\":[\"abhilash\"], \"points\":25}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Get Current Players",
+			"request": {
+				"url": "localhost:8080/player/current-players",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"players\":[\"abhilash\"], \"points\":25}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Pictionary- Exchange Data",
+			"request": {
+				"url": "localhost:8080/pictionary/exchange-data",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Add player",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/player/add-player?name=abhilash",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"player",
+						"add-player"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "abhilash",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Give chance to player",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/player/give-chance-players?names=abhilas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"player",
+						"give-chance-players"
+					],
+					"query": [
+						{
+							"key": "names",
+							"value": "abhilas",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Set Current Word",
+			"request": {
+				"url": {
+					"raw": "localhost:8080/pictionary/set-word?word=dog",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"pictionary",
+						"set-word"
+					],
+					"query": [
+						{
+							"key": "word",
+							"value": "dog",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}

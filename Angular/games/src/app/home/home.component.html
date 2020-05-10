@@ -1,0 +1,10 @@
+<div class="form-div">
+  <span class="ui-float-label">
+    <input id="float-input" type="text" size="30" [(ngModel)]="name" type="text" size="30" pInputText pInputText>
+    <label for="float-input">Username</label>
+  </span>
+  <p-button class="submit-username-button ui-button-raised ui-button-danger" [disabled]="!name.length"
+    (onClick)="addPlayer()">
+    <span class="icon-class fa fa-user-plus"></span>
+  </p-button>
+</div>

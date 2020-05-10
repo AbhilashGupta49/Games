@@ -1,0 +1,23 @@
+<div class="component-container-div">
+  <div class="canvas-div">
+    <p-toolbar>
+      <app-timer class="timer-component" [time]="time" [label]="'Time Left: '"></app-timer>
+      <div class="ui-toolbar-group-left canvas-toolbar-text-div">
+        <span *ngIf="currentChance && currentChance.length!=0" class="canvas-toolbar-span"><b>{{currentChance}}</b> is
+          drawing!</span>
+        <span *ngIf="currentWord" class="canvas-toolbar-span"> Word is <b>{{currentWord}}</b></span>
+      </div>
+      <div class="ui-toolbar-group-right">
+        <p-button class="clear-button ui-button-raised ui-button-warning" (onClick)="cleanCanvas()">
+          <span class="fa fa-eraser"></span>
+        </p-button>
+      </div>
+    </p-toolbar>
+    <canvas #canvas></canvas>
+  </div>
+  <div class="messages-div">
+    <app-messages (myMessages)="myMessages.push($event)" [allMessages]="allMessages"></app-messages>
+  </div>
+</div>
+<app-scorecard [scoreCard]="scoreCard"></app-scorecard>
+<app-win-condition *ngIf="winCondition" [winCondition]="winCondition"></app-win-condition>

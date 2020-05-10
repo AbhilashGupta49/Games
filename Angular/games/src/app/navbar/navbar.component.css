@@ -1,0 +1,42 @@
+.navbar-list {
+  background-color: #f44336;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul li {
+  list-style-type: none;
+  height: 32px;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 1px;
+  color: #FFFFFF;
+  border-right: 1px #FFFFFF;
+}
+
+.link-active {
+  text-decoration: underline !important;
+}
+
+ul li span {
+  margin-right: 4px;
+  margin-left: 5px;
+  font-size: 20px;
+
+}
+
+ul li a {
+  color: #FFFFFF;
+  font-size: 23px;
+  text-decoration: none;
+}
