@@ -7,7 +7,7 @@ import { ConfigsList } from "../configs/config-list";
   styleUrls: ["./navbar.component.css"]
 })
 export class NavbarComponent implements OnInit {
-  private gameList = [];
+  gameList = [];
 
   constructor() {
     this.gameList = ConfigsList.getActualGameList();

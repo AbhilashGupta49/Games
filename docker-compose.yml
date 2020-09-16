@@ -1,0 +1,16 @@
+version: "3.5"
+services:
+ games:
+  build: ./Spring/games
+  image: "games:latest"
+  container_name: backend
+  ports:
+   - 8080:8080
+ front:
+  build: ./Angular/games
+  image: "front:latest"
+  container_name: frontend
+  ports: 
+   - 4200:4200
+  links:
+   - games

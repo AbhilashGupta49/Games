@@ -7,8 +7,8 @@ import { Component, OnInit, AfterViewInit, Input } from "@angular/core";
 })
 export class TimerComponent {
 
-  @Input() private time: number;
-  @Input() private label: string;
+  @Input() time: number;
+  @Input() label: string;
 
   constructor() { }
 

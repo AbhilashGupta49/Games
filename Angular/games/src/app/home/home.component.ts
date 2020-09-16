@@ -12,7 +12,7 @@ import { Router } from "@angular/router";
 })
 export class HomeComponent implements AfterViewInit {
 
-  private name = "";
+  name = "";
 
   constructor(private router: Router, private httpService: HttpService, private homeDataService: HomeDataService) {
 
@@ -27,7 +27,7 @@ export class HomeComponent implements AfterViewInit {
     }
   }
 
-  private addPlayer() {
+  addPlayer() {
     const name = this.name;
     this.httpService.makePostRequest(
       GlobalVariables.basePath + Constants.HTTP_ADD_PLAYER,

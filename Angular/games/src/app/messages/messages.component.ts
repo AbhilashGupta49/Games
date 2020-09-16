@@ -9,14 +9,14 @@ import { ScrollPanel } from "primeng/scrollpanel";
 })
 export class MessagesComponent {
 
-  @Output() private myMessages: EventEmitter<any> = new EventEmitter<any>();
-  @Input() private allMessages;
+  @Output() myMessages: EventEmitter<any> = new EventEmitter<any>();
+  @Input() allMessages;
 
-  private myText = "";
+  myText = "";
 
   constructor() { }
 
-  private addToMyMessages() {
+  addToMyMessages() {
     this.myMessages.emit(this.myText);
     this.myText = "";
   }

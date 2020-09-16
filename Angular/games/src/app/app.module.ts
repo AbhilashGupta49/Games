@@ -34,10 +34,13 @@ import { TimerComponent } from './timer/timer.component';
     TimerComponent
   ],
   imports: [BrowserAnimationsModule, BrowserModule, ButtonModule, CardModule, CommonModule, FormsModule,
-    HttpClientModule, InputTextModule, RouterModule.forRoot(ConfigsList.getRoutes()),
+    HttpClientModule, InputTextModule, RouterModule.forRoot([]),
     ScrollPanelModule, ToastModule, ToolbarModule],
   providers: [Button, InputText, MessageService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [
+    HomeComponent, PictionaryComponent
+ ]
 })
 export class AppModule {
 }

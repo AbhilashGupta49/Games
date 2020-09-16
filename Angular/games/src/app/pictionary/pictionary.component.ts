@@ -15,25 +15,25 @@ import { MessageService } from "primeng/components/common/messageservice";
 export class PictionaryComponent implements AfterViewInit, OnDestroy {
 
   @ViewChild("canvas") public canvas: ElementRef;
-  private canvasContext: CanvasRenderingContext2D;
-  private width = 400;
-  private height = 400;
-  private strokeArray = [];
+  canvasContext: CanvasRenderingContext2D;
+  width = 400;
+  height = 400;
+  strokeArray = [];
 
-  private myMessages = [];
-  private allMessages = [];
-  private winCondition;
+  myMessages = [];
+  allMessages = [];
+  winCondition;
 
-  private scoreCard;
+  scoreCard;
 
-  private currentWord;
+  currentWord;
 
-  private myChance = false;
-  private currentChance = "";
+  myChance = false;
+  currentChance = "";
 
-  private time = 0;
+  time = 0;
 
-  private subscription: Subscription = new Subscription();
+  subscription: Subscription = new Subscription();
 
   constructor(
     private pictionaryDataService: PictionaryDataService,

@@ -8,9 +8,9 @@ import { KeyValue } from "@angular/common";
 })
 export class ScorecardComponent implements AfterViewInit {
 
-  @Input() private scoreCard;
+  @Input() scoreCard;
 
-  private valueDescOrder = (a: KeyValue<string, number>, b: KeyValue<string, number>) => {
+  valueDescOrder = (a: KeyValue<string, number>, b: KeyValue<string, number>) => {
     return a.value > b.value ? -1 : (b.value > a.value ? 1 : 0);
   }
 
